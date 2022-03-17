@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  user-select: none;
+
+  font-family: "Barlow", sans-serif;
+}
+:root {
+  --Softred: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Darkdesaturatedcyan: hsl(167, 40%, 24%);
+  --Darkblue: hsl(198, 62%, 26%);
+  --Darkmoderatecyan: hsl(168, 34%, 41%);
+  --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+  --Verydarkgrayishblue: hsl(213, 9%, 39%);
+  --Darkgrayishblue: hsl(232, 10%, 55%);
+  --Grayishblue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --desktop: 1440px;
+  --mobile: 375px;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  width: 124px;
+  height: 24px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.menu-item {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  list-style: none;
+  border-radius: 20px;
+}
+.menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.menu-item a {
+  text-decoration: none;
+  color: white;
+}
+.main {
+  width: 100%;
+  max-width: var(--desktop);
+  margin: 0 auto;
+}
+.banner {
+  background-image: url("../images/icon-arrow-down.svg"),
+    url("../images/desktop/image-header.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 30px, cover;
+  background-position: center 40%, center bottom;
+  min-height: 625px;
+  max-height: 625px;
+  position: relative;
+}
+
+.banner h1 {
+  text-align: center;
+  margin-top: 2.5rem;
+
+  color: white;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.name {
+  font-family: "Fraunces", serif;
+}
+#bar-icon,
+.bar-navbar {
+  display: none;
+}
+@media screen and (max-width: 1188px) {
+  .banner {
+    background-size: 30px, cover;
+    background-position: center 40%, bottom;
+    min-height: 500px;
+  }
+  .bar-navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1016px) {
+  .banner {
+    background-size: 30px, cover;
+    background-position: center 50%, center;
+  }
+  .bar-navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .box-1 {
+    min-width: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-items {
+    display: none;
+  }
+  #bar-icon {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  #bar-icon:hover,
+  .bar-navbar li:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .bar-navbar {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+  }
+  .bar-menu-items {
+    background-color: rgba(255, 255, 255);
+  }
+  .bar-menu-item {
+    list-style: none;
+    padding: 0.7rem 1rem;
+    color: gray;
+  }
+  .shape {
+    width: 0;
+    height: 0;
+    border-right: 0;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid white;
+    margin-left: auto;
+  }
+  .bar-menu-item:hover {
+    background: linear-gradient(to bottom, rgb(226, 226, 84), yellow);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .do-display-block {
+    display: none;
+  }
+  .menu li {
+    display: none;
+  }
+}
+
+.do-display-block {
+  display: block;
+}
+@keyframes example {
+  from {
+    left: -50rem;
+    right: 50rem;
+  }
+  to {
+    left: 1rem;
+    right: 1rem;
+  }
+}
+.do-display-block {
+  display: block;
+}
+.transform-img {
+  width: 100%;
+  height: auto;
+}
+.box {
+  width: 60%;
+}
+.box h2 {
+  font-weight: bold;
+}
+.box p {
+  color: var(--Grayishblue);
+}
+.box h2,
+.box p {
+  margin-bottom: 1.5rem;
+}
+.graphic-design-img {
+  width: 100%;
+  min-width: 50%;
+  height: auto;
+}
+.box-1 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  left: 1rem;
+}
+.graphic-design-heading {
+  color: var(--Darkdesaturatedcyan);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.graphic-design-para {
+  color: var(--Darkmoderatecyan);
+}
+.photography-heading {
+  color: var(--Darkblue);
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.photography-para {
+  color: var(--Verydarkdesaturatedblue);
+}
+.testimonials-heading {
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: var(--Grayishblue);
+  margin-top: 100px;
+}
+.testimonial-container {
+  margin-bottom: 100px;
+}
+.testimonial-box {
+  text-align: center;
+  padding: 3.45rem;
+  padding-bottom: 0;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.testimonial-box .description {
+  margin-bottom: 3rem;
+  color: var(--Darkblue);
+  line-height: 1.5;
+}
+.testimonial-box .name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.profession {
+  color: var(--Grayishblue);
+  font-size: 0.8rem;
+}
+.four-images img {
+  width: 100%;
+  height: auto;
+}
+.footer {
+  text-align: center;
+}
+.footer li {
+  list-style: none;
+  display: inline-block;
+  margin: 1.5rem 3rem;
+}
+.footer a {
+  color: var(--Darkdesaturatedcyan);
+}
+.footer li a:hover {
+  color: white;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons img {
+  margin: 2rem 0.5rem;
+}
+.icons img:hover {
+  cursor: pointer;
+}
+.footer-heading {
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  margin: 1rem;
+
+  font-size: 1.7rem;
+  color: var(--Darkdesaturatedcyan);
+}
+.footer-bar {
+  background-color: #9cdcce;
+}
+
+.graphic-design-container {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+.photography-container {
+  background-image: url("../images/desktop/image-photography.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+@media screen and (max-width: 752px) {
+  .box {
+    margin: 3rem 0rem;
+    text-align: center;
+    width: 70%;
+  }
+  .banner h1 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1.5;
+  }
+}
+.transform-learn-more {
+  color: black;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+}
+.stand-out-learn-more {
+  color: black;
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+  display: block;
+}
+.stand-out-learn-more:hover {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: rgb(253, 120, 103, 0.7);
+  text-decoration-thickness: 8px;
+}
+.transform-learn-more:hover {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: rgb(254, 208, 0, 0.7);
+  text-decoration-thickness: 8px;
+}
